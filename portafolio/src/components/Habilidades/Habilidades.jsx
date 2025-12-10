@@ -25,23 +25,44 @@ import gitLogo from "../../assets/Herramientas/git-scm-icon.svg"
 import githubLogo from "../../assets/Herramientas/Octicons-mark-github.svg"
 import tableauLogo from "../../assets/Herramientas/tableau-software.svg"
 
-export default function Habilidades() {
+export default function Habilidades({ language }) {
+
+  const texts = {
+    es: {
+      titulo: "Habilidades Técnicas",
+      descripcion:
+        "A lo largo de mi formación académica he desarrollado habilidades técnicas en diversas áreas como el desarrollo web, el manejo de bases de datos y el análisis de datos, las cuales he aplicado en proyectos universitarios. Me caracterizo por investigar y comprender a fondo las tecnologías utilizadas, aplicar buenas prácticas de programación y trabajar de forma organizada para cumplir con los objetivos de cada proyecto.",
+      tarjetas: {
+        lenguajes: "Lenguajes de Programación",
+        frameworks: "Frameworks y Librerías",
+        bases: "Bases de Datos",
+        frontend: "Frontend / Desarrollo Web",
+        herramientas: "Herramientas y Otros",
+      },
+    },
+    en: {
+      titulo: "Technical Skills",
+      descripcion:
+        "Throughout my academic training, I have developed technical skills in areas such as web development, database management, and data analysis, which I have applied in university projects. I am characterized by my ability to research and deeply understand the technologies I use, apply good programming practices, and work in an organized manner to meet the objectives of each project.",
+      tarjetas: {
+        lenguajes: "Programming Languages",
+        frameworks: "Frameworks and Libraries",
+        bases: "Databases",
+        frontend: "Frontend / Web Development",
+        herramientas: "Tools and Others",
+      },
+    },
+  };
+
   return (
     <div className="max-w-7xl mx-auto">
-      <h1 className="text-[#395E66] mb-4">
-        Habilidades Técnicas
-      </h1>
+      <h1 className="text-[#395E66] mb-4">{texts[language].titulo}</h1>
       
-      <h3 className="text-gray-700 mb-10">
-        A lo largo de mi formación académica he desarrollado habilidades técnicas en diversas áreas como el desarrollo web, 
-        el manejo de bases de datos y el análisis de datos, las cuales he aplicado en proyectos universitarios. 
-        Me caracterizo por investigar y comprender a fondo las tecnologías utilizadas, 
-        aplicar buenas prácticas de programación y trabajar de forma organizada para cumplir con los objetivos de cada proyecto.
-      </h3>
+      <h3 className="text-gray-700 mb-10">{texts[language].descripcion}</h3>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        <TarjetaHabilidades title="Lenguajes de Programación">
+        <TarjetaHabilidades title={texts[language].tarjetas.lenguajes}>
             <IconoHabilidad src={javaLogo} alt="Java" label="Java" />
             <IconoHabilidad src={csharpLogo} alt="C#" label="C#" />
             <IconoHabilidad src={phpLogo} alt="PHP" label="PHP" />
@@ -50,7 +71,7 @@ export default function Habilidades() {
             <IconoHabilidad src={pythonLogo} alt="Python" label="Python" />
         </TarjetaHabilidades>
 
-        <TarjetaHabilidades title="Frameworks y Librerías">
+        <TarjetaHabilidades title={texts[language].tarjetas.frameworks}>
             <IconoHabilidad src={springLogo} alt="Spring Boot" label="Spring Boot" />
             <IconoHabilidad src={netLogo} alt="ASP .NET" label="ASP .NET Core" />
             <IconoHabilidad src={blazorLogo} alt="Blazor" label="Blazor" />
@@ -58,14 +79,14 @@ export default function Habilidades() {
             <IconoHabilidad src={reactLogo} alt="React" label="React" />
         </TarjetaHabilidades>
 
-        <TarjetaHabilidades title="Bases de Datos">
+        <TarjetaHabilidades title={texts[language].tarjetas.bases}>
             <IconoHabilidad src={mysqlLogo} alt="MySQL" label="MySQL" />
             <IconoHabilidad src={sqldevLogo} alt="Oracle SQL Developer" label="Oracle SQL Developer" />
             <IconoHabilidad src={sqliteLogo} alt="SQLite" label="SQLite" />
             <IconoHabilidad src={msqlLogo} alt="Microsoft SQL Server" label="Microsoft SQL Server" />
         </TarjetaHabilidades>
 
-        <TarjetaHabilidades title="Frontend / Desarrollo Web">
+        <TarjetaHabilidades title={texts[language].tarjetas.frontend}>
             <IconoHabilidad src={htmlLogo} alt="HTML5" label="HTML5" />
             <IconoHabilidad src={cssLogo} alt="CSS3" label="CSS3" />
             <IconoHabilidad src={muiLogo} alt="Material UI" label="Material UI" />
@@ -73,7 +94,7 @@ export default function Habilidades() {
             <IconoHabilidad src={bootstrapLogo} alt="Bootstrap" label="Bootstrap" />
         </TarjetaHabilidades>
 
-        <TarjetaHabilidades title="Herramientas y Otros" className="justify-self-center w-full md:col-span-2">
+        <TarjetaHabilidades title={texts[language].tarjetas.herramientas} className="justify-self-center w-full md:col-span-2">
             <IconoHabilidad src={gitLogo} alt="Git" label="Git" />
             <IconoHabilidad src={githubLogo} alt="GitHub" label="GitHub" />
             <IconoHabilidad src={figmaLogo} alt="Figma" label="Figma" />
