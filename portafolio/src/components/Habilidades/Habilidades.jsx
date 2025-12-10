@@ -55,7 +55,7 @@ export default function Habilidades({ language }) {
   };
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <div id="habilidades" className="max-w-7xl mx-auto">
       <h1 className="text-[#395E66] mb-4">{texts[language].titulo}</h1>
       
       <h3 className="text-gray-700 mb-10">{texts[language].descripcion}</h3>

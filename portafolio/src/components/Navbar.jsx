@@ -1,10 +1,18 @@
-import { useState, useRef, useEffect } from "react"
+import { useContext, useState, useRef, useEffect } from "react"
 import { GlobeAltIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { RiArrowDropDownLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
+import { LanguageContext } from "../context/LanguageContext";
 
-export default function Navbar({ language, setLanguage }) {
+export default function Navbar() {
+
+  const { language, setLanguage } = useContext(LanguageContext);
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
   const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false)
+
   const dropdownRef = useRef(null)
 
   const texts = {
@@ -20,7 +28,7 @@ export default function Navbar({ language, setLanguage }) {
       proyectos: "Projects",
       experiencia: "Experience",
       idioma: "Language",
-      descargarCV: "Download CV",
+      descargarCV: "Download Resume",
     },
   }
 
@@ -48,15 +56,27 @@ export default function Navbar({ language, setLanguage }) {
       <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-16">
         <div className="flex items-center justify-between h-16">
           <div className="hidden md:flex items-center gap-6">
-            <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">
+            <Link
+              to="/"
+              className="px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors rounded-[12px]"
+            >
               {texts[language].habilidades}
-            </button>
-            <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">
+            </Link>
+
+            <Link
+              to="/proyectos"
+              className="px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors rounded-[12px]"
+            >
               {texts[language].proyectos}
-            </button>
-            <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">
+            </Link>
+
+            <Link
+              to="/experiencia"
+              className="px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors rounded-[12px]"
+            >
               {texts[language].experiencia}
-            </button>
+            </Link>
+
           </div>
 
           <div className="md:hidden">
@@ -73,15 +93,15 @@ export default function Navbar({ language, setLanguage }) {
             <div className="relative">
               <button
                 onClick={toggleLanguageDropdown}
-                className="flex items-center gap-2 px-5 py-2 text-gray-700 hover:bg-gray-100 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 rounded-[12px] hover:bg-gray-200 transition"
               >
                 <GlobeAltIcon className="w-5 h-5" />
-                <span>{texts[language].idioma}</span>
-                <span>&#9662;</span>
+                {texts[language].idioma}
+                <span><RiArrowDropDownLine /></span>
               </button>
 
               {languageDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-24 bg-white border rounded-lg shadow-lg z-10">
+                <div className="absolute right-0 mt-2 bg-white shadow-lg rounded-lg border w-28">
                   <button
                     onClick={() => changeLanguage("es")}
                     className="block w-full text-left px-4 py-2 hover:bg-gray-100"
@@ -128,15 +148,30 @@ export default function Navbar({ language, setLanguage }) {
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-gray-200">
           <div className="px-4 py-3 space-y-3">
-            <button className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">
+            <Link
+              to="/"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-[12px]"
+            >
               {texts[language].habilidades}
-            </button>
-            <button className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">
+            </Link>
+
+            <Link
+              to="/proyectos"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-[12px]"
+            >
               {texts[language].proyectos}
-            </button>
-            <button className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">
+            </Link>
+
+            <Link
+              to="/experiencia"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-[12px]"
+            >
               {texts[language].experiencia}
-            </button>
+            </Link>
+
 
             {/* Dropdown en mobile */}
             <div className="relative" ref={dropdownRef}>
@@ -146,7 +181,7 @@ export default function Navbar({ language, setLanguage }) {
               >
                 <GlobeAltIcon className="w-5 h-5" />
                 <span>{texts[language].idioma}</span>
-                <span className="ml-auto">&#9662;</span>
+                <span><RiArrowDropDownLine /></span>
               </button>
 
               {languageDropdownOpen && (
