@@ -61,3 +61,13 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.custom-swiper {
+  --swiper-navigation-color: #395E66;
+  --swiper-navigation-size: 28px;
+}
+
+.custom-swiper .swiper-button-next::after,
+.custom-swiper .swiper-button-prev::after {
+  font-size: 28px;
+}

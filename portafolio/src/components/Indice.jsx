@@ -10,7 +10,7 @@ export default function Indice() {
 
   return (
     <div className="flex flex-col min-h-screen">
-        <div className="sticky"> 
+        <div className="sticky top-0 z-50 bg-white"> 
             <Navbar language={language} setLanguage={setLanguage} />
         </div>
       

@@ -1,29 +1,29 @@
 import TarjetaHabilidades from './TarjetaHabilidades'
 import IconoHabilidad from './IconoHabilidad';
-import cppLogo from "../../assets/Lenguajes/ISO_C++_Logo.svg";
-import javaLogo from "../../assets/Lenguajes/java-icon.svg";
-import csharpLogo from "../../assets/Lenguajes/Logo_C_sharp.svg";
-import phpLogo from "../../assets/Lenguajes/PHP-logo.svg";
-import pythonLogo from "../../assets/Lenguajes/Python-logo-notext.svg";
-import jsLogo from "../../assets/Lenguajes/Unofficial_JavaScript_logo_2.svg";
-import blazorLogo from "../../assets/Frameworks/blazor.svg"
-import laravelLogo from "../../assets/Frameworks/Laravel.svg"
-import netLogo from "../../assets/Frameworks/NET_Core_Logo.svg"
-import reactLogo from "../../assets/Frameworks/React-icon.svg"
-import springLogo from "../../assets/Frameworks/Spring_Boot.svg"
-import msqlLogo from "../../assets/Bases/Microsoft_SQL_Server_2025_icon.svg"
-import mysqlLogo from "../../assets/Bases/mysql-icon.svg"
-import sqldevLogo from "../../assets/Bases/SQL Developer.svg"
-import sqliteLogo from "../../assets/Bases/sqlite-icon.svg"
-import bootstrapLogo from "../../assets/Frontend/Bootstrap_logo.svg"
-import muiLogo from "../../assets/Frontend/mui-icon.svg"
-import tailwindLogo from "../../assets/Frontend/tailwindcss-icon.svg"
-import cssLogo from "../../assets/Frontend/w3_css-icon~old.svg"
-import htmlLogo from "../../assets/Frontend/w3_html5-icon.svg"
-import figmaLogo from "../../assets/Herramientas/figma-icon.svg"
-import gitLogo from "../../assets/Herramientas/git-scm-icon.svg"
-import githubLogo from "../../assets/Herramientas/Octicons-mark-github.svg"
-import tableauLogo from "../../assets/Herramientas/tableau-software.svg"
+import cppLogo from "../../assets/Iconos/Lenguajes/ISO_C++_Logo.svg";
+import javaLogo from "../../assets/Iconos/Lenguajes/java-icon.svg";
+import csharpLogo from "../../assets/Iconos/Lenguajes/Logo_C_sharp.svg";
+import phpLogo from "../../assets/Iconos/Lenguajes/PHP-logo.svg";
+import pythonLogo from "../../assets/Iconos/Lenguajes/Python-logo-notext.svg";
+import jsLogo from "../../assets/Iconos/Lenguajes/Unofficial_JavaScript_logo_2.svg";
+import blazorLogo from "../../assets/Iconos/Frameworks/blazor.svg"
+import laravelLogo from "../../assets/Iconos/Frameworks/Laravel.svg"
+import netLogo from "../../assets/Iconos/Frameworks/NET_Core_Logo.svg"
+import reactLogo from "../../assets/Iconos/Frameworks/React-icon.svg"
+import springLogo from "../../assets/Iconos/Frameworks/Spring_Boot.svg"
+import msqlLogo from "../../assets/Iconos/Bases/Microsoft_SQL_Server_2025_icon.svg"
+import mysqlLogo from "../../assets/Iconos/Bases/mysql-icon.svg"
+import sqldevLogo from "../../assets/Iconos/Bases/SQL Developer.svg"
+import sqliteLogo from "../../assets/Iconos/Bases/sqlite-icon.svg"
+import bootstrapLogo from "../../assets/Iconos/Frontend/Bootstrap_logo.svg"
+import muiLogo from "../../assets/Iconos/Frontend/mui-icon.svg"
+import tailwindLogo from "../../assets/Iconos/Frontend/tailwindcss-icon.svg"
+import cssLogo from "../../assets/Iconos/Frontend/w3_css-icon~old.svg"
+import htmlLogo from "../../assets/Iconos/Frontend/w3_html5-icon.svg"
+import figmaLogo from "../../assets/Iconos/Herramientas/figma-icon.svg"
+import gitLogo from "../../assets/Iconos/Herramientas/git-scm-icon.svg"
+import githubLogo from "../../assets/Iconos/Herramientas/Octicons-mark-github.svg"
+import tableauLogo from "../../assets/Iconos/Herramientas/tableau-software.svg"
 
 export default function Habilidades({ language }) {
 
