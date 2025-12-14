@@ -278,6 +278,9 @@ export const proyectos = [
         libraries: ["React and Tailwind CSS"],
         database: ["JSON file"]
       }
+    },detalle: {
+      es: "Proyecto desarrollado para la semana de la carrera de Ingeniería en Sistemas 2025",
+      en: "Developed for a game show as part of the activities done for the Software Engineering undergraduate celebration week of 2025"
     },
     rol: {
       es: ["Desarrollo completo del frontend de la aplicación.",
