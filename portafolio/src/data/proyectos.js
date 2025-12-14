@@ -295,7 +295,7 @@ export const proyectos = [
       en: ["In this project, I learned how to organize my work independently and research technical solutions on my own, such as real-time updates using CORSMiddleware. I also had the creative freedom to design and implement a functional solution without strict requirements, strengthening my ability to research and solve problems autonomously.",
       ]
     },
-    github: ""
+    github: "https://github.com/a-galvez/100-Ingenieros-Dijeron.git"
   },
 
   {
