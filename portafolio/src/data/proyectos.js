@@ -15,6 +15,14 @@ import xclone4 from "../assets/Capturas/BD1/image (2).png"
 import xclone5 from "../assets/Capturas/BD1/image (3).png"
 import xclone6 from "../assets/Capturas/BD1/image (4).png"
 
+import etl1 from "../assets/Capturas/BD2/Modelo Copo de Nieve.png"
+import etl2 from "../assets/Capturas/BD2/Diagrama Relacional OLTP.png"
+import etl3 from "../assets/Capturas/BD2/TablasParaOLAP.png"
+
+import ing1 from "../assets/Capturas/100-Ing/100-ing1.png"
+
+import cnn1 from "../assets/Capturas/IA/WhatsApp Image 2025-12-13 at 9.55.04 PM.jpeg"
+
 export const proyectos = [
   {
     id: "planify",
@@ -186,10 +194,10 @@ export const proyectos = [
   },
   {
     id: "etl-data-warehouse",
-    imagen: "",
+    imagen: { type: "image", src: etl1 },
     media: [
-      { type: "image", src: "../assets/Capturas/BD2/" },
-      { type: "image", src: "../assets/Capturas/BD2/" }
+      { type: "image", src: etl2},
+      { type: "image", src: etl3 }
     ],
     titulo: {
       es: "ETL para un Data Warehouse",
@@ -247,10 +255,9 @@ export const proyectos = [
   },
   {
     id: "100-ingenieros-dijeron",
-    imagen: "",
+    imagen: { type: "image", src: ing1 },
     media: [
-      { type: "image", src: "../assets/Capturas/100-Ing/" },
-      { type: "video", src: "../assets/Capturas/100-Ing/" }
+      { type: "image", src: ing1 },
     ],
     titulo: {
       es: "100 Ingenieros Dijeron",
@@ -293,10 +300,9 @@ export const proyectos = [
 
   {
     id: "cnn-flores",
-    imagen: "",
+    imagen: { type: "image", src: cnn1 },
     media: [
-      { type: "image", src: "../assets/Capturas/IA/" },
-      { type: "image", src: "../assets/Capturas/IA/" }
+      { type: "image", src: cnn1 },
     ],
     titulo: {
       es: "Red Neuronal Convolucional",
