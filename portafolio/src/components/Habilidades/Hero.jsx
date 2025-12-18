@@ -27,11 +27,11 @@ export default function Hero({ language }) {
         </div>
       </div>
 
-      <div className="flex-1">
+      <div className="flex-1 flex justify-center">
         <img
           src="/src/assets/fotoPerfil.jpg"
           alt="Aída Gálvez"
-          className="w-full max-w-xs rounded-lg shadow-lg"
+          className="w-full max-w-[380px] rounded-lg shadow-lg "
         />
       </div>
     </section>
