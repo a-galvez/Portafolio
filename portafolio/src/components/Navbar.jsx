@@ -228,7 +228,7 @@ export default function Navbar() {
               </a>
             </div>
 
-            <a href={cvFile} download className="w-full bg-[#32936f] text-white px-4 py-2 rounded-lg hover:bg-[#2a7d5f] transition-colors">
+            <a href={cvFile} download className="w-full bg-[#32936f] text-white no-underline hover:no-underline px-4 py-2 rounded-lg transition-colors">
               {texts[language].descargarCV}
             </a>
           </div>
