@@ -29,7 +29,7 @@ export default function Hero({ language }) {
 
       <div className="flex-1">
         <img
-          src="/ruta-de-tu-foto.jpg"
+          src="/src/assets/fotoPerfil.jpg"
           alt="Aída Gálvez"
           className="w-full max-w-xs rounded-lg shadow-lg"
         />

@@ -3,7 +3,7 @@ import planify2 from "../assets/Capturas/POO/image (1).png"
 import planify3 from "../assets/Capturas/POO/image (2).png"
 import planify4 from "../assets/Capturas/POO/image (3).png"
 import planify5 from "../assets/Capturas/POO/image (4).png" 
-import planifyDemo from "../assets/Capturas/POO/Planify-Demo.mp4"
+//import planifyDemo from "../assets/Capturas/POO/Planify-Demo.mp4"
 
 import aeropass1 from "../assets/Capturas/Lenguajes/image (1).png"
 import aeropass2 from "../assets/Capturas/Lenguajes/image.png"
@@ -20,6 +20,9 @@ import etl2 from "../assets/Capturas/BD2/Diagrama Relacional OLTP.png"
 import etl3 from "../assets/Capturas/BD2/TablasParaOLAP.png"
 
 import ing1 from "../assets/Capturas/100-Ing/100-ing1.png"
+import ing2 from "../assets/Capturas/100-Ing/100-ing2.png"
+import ing3 from "../assets/Capturas/100-Ing/100-ing3.png"
+import ing4 from "../assets/Capturas/100-Ing/100-ing4.png"
 
 import cnn1 from "../assets/Capturas/IA/WhatsApp Image 2025-12-13 at 9.55.04 PM.jpeg"
 
@@ -32,7 +35,6 @@ export const proyectos = [
               { type: "image", src: planify3 },
               { type: "image", src: planify4 },
               { type: "image", src: planify5 },
-              { type: "video", src: planifyDemo }
     ],
     titulo: {
       es: "Planify - Página web para gestión y agenda de actividades",
@@ -258,6 +260,9 @@ export const proyectos = [
     imagen: { type: "image", src: ing1 },
     media: [
       { type: "image", src: ing1 },
+      { type: "image", src: ing2 },
+      { type: "image", src: ing3 },
+      { type: "image", src: ing4 },
     ],
     titulo: {
       es: "100 Ingenieros Dijeron",
