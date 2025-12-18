@@ -1,4 +1,5 @@
 import React from "react";
+import fotoPerfil from "../../assets/fotoPerfil.jpg";
 
 export default function Hero({ language }) {
 
@@ -29,7 +30,7 @@ export default function Hero({ language }) {
 
       <div className="flex-1 flex justify-center">
         <img
-          src="/src/assets/fotoPerfil.jpg"
+          src={fotoPerfil}
           alt="Aída Gálvez"
           className="w-full max-w-[380px] rounded-lg shadow-lg "
         />
