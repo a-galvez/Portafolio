@@ -32,6 +32,11 @@ export default function Navbar() {
     },
   }
 
+  const cvFile =
+  language === "es"
+    ? "/CV Aída Gálvez.pdf"
+    : "/Aída Gálvez.pdf";
+
   const toggleLanguageDropdown = () => setLanguageDropdownOpen(!languageDropdownOpen)
 
   const changeLanguage = (lang) => {
@@ -138,9 +143,9 @@ export default function Navbar() {
               <FaLinkedin className="w-5 h-5" />
             </a>
 
-            <button className="bg-[#32936f] text-white px-4 py-2 rounded-lg hover:bg-[#2a7d5f] transition-colors">
+            <a href={cvFile} download className="bg-[#32936f] text-white px-4 py-2 rounded-lg hover:bg-[#2a7d5f] transition-colors">
               {texts[language].descargarCV}
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -223,9 +228,9 @@ export default function Navbar() {
               </a>
             </div>
 
-            <button className="w-full bg-[#32936f] text-white px-4 py-2 rounded-lg hover:bg-[#2a7d5f] transition-colors">
+            <a href={cvFile} download className="w-full bg-[#32936f] text-white px-4 py-2 rounded-lg hover:bg-[#2a7d5f] transition-colors">
               {texts[language].descargarCV}
-            </button>
+            </a>
           </div>
         </div>
       )}
