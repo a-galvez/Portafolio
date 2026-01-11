@@ -26,9 +26,19 @@ import ing4 from "../assets/Capturas/100-Ing/100-ing4.png"
 
 import cnn1 from "../assets/Capturas/IA/WhatsApp Image 2025-12-13 at 9.55.04 PM.jpeg"
 
+import huellaAmiga1 from "../assets/Capturas/Analisis/homepage.png"
+import huellaAmiga2 from "../assets/Capturas/Analisis/Captura de pantalla (402).png"
+import huellaAmiga3 from "../assets/Capturas/Analisis/Captura de pantalla (404).png"
+import huellaAmiga4 from "../assets/Capturas/Analisis/Captura de pantalla (405).png"
+import huellaAmiga5 from "../assets/Capturas/Analisis/Captura de pantalla (406).png"
+import huellaAmiga6 from "../assets/Capturas/Analisis/Captura de pantalla (409).png"
+import huellaAmiga7 from "../assets/Capturas/Analisis/Captura de pantalla (414).png"
+import huellaAmiga8 from "../assets/Capturas/Analisis/Captura de pantalla (415).png"
+
 export const proyectos = [
   {
     id: "planify",
+    type: "software",
     imagen: { type: "image", src: planify1 }, 
     media: [  { type: "image", src: planify1 },
               { type: "image", src: planify2 },
@@ -84,6 +94,7 @@ export const proyectos = [
 
   {
     id: "aeropass",
+    type: "software",
     imagen: { type: "image", src: aeropass1 },
     media: [  { type: "image", src: aeropass1 },
               { type: "image", src: aeropass2 },
@@ -138,6 +149,7 @@ export const proyectos = [
   },
   {
     id: "x-clone",
+    type: "software",
     imagen: { type: "image", src: xclone1 },
     media: [  { type: "image", src: xclone1 },
               { type: "image", src: xclone2 },
@@ -196,6 +208,7 @@ export const proyectos = [
   },
   {
     id: "etl-data-warehouse",
+    type: "software",
     imagen: { type: "image", src: etl1 },
     media: [
       { type: "image", src: etl2},
@@ -257,6 +270,7 @@ export const proyectos = [
   },
   {
     id: "100-ingenieros-dijeron",
+    type: "software",
     imagen: { type: "image", src: ing1 },
     media: [
       { type: "image", src: ing1 },
@@ -308,6 +322,7 @@ export const proyectos = [
 
   {
     id: "cnn-flores",
+    type: "software",
     imagen: { type: "image", src: cnn1 },
     media: [
       { type: "image", src: cnn1 },
@@ -359,5 +374,74 @@ export const proyectos = [
       ]
     },
     github: "https://github.com/a-galvez/Proyecto-IA.git"
+  },
+    {
+    id: "huella-amiga",
+    type: "design",
+    imagen: { type: "image", src: huellaAmiga1},
+    media: [
+      { type: "image", src: huellaAmiga1 },
+      { type: "image", src: huellaAmiga2 },
+      { type: "image", src: huellaAmiga3 },
+      { type: "image", src: huellaAmiga4 },
+      { type: "image", src: huellaAmiga5 },
+      { type: "image", src: huellaAmiga6 },
+      { type: "image", src: huellaAmiga7 },
+      { type: "image", src: huellaAmiga8 },
+    ],
+    titulo: {
+      es: "Huella Amiga - Página para Adopción de Mascotas",
+      en: "Huella Amiga – Web Application for Pet Adoption"
+    },
+    descripcion: {
+      es: "Este proyecto consiste en el diseño y desarrollo del prototipo frontend en Figma para una plataforma web orientada a la adopción de mascotas. La propuesta incluye el uso de algoritmos de recomendación enfocados en analizar las preferencias del usuario con el fin de sugerir mascotas que se ajusten a sus intereses y necesidades.",
+      en: "This project focuses on the design and development of a frontend prototype in Figma for a web platform aimed at pet adoption. The proposal includes the use of recommendation algorithms designed to analyze user preferences in order to suggest pets that best match their interests and needs."
+    },
+    tecnologias: {
+      es: {
+        herramientas: ["Figma"]
+      },
+      en: {
+        tools: ["Figma"]
+      }
+    },
+    detalle: {
+      es: ["La plataforma contempla dos tipos de usuarios:" ,
+            "Casa cuna / adoptante, quienes pueden publicar mascotas en adopción y realizar solicitudes de adopción.",
+            "Refugio, con la capacidad de publicar mascotas y gestionar las solicitudes recibidas.", 
+            "Este proyecto fue desarrollado como parte de la asignatura Análisis y Diseño de Sistemas, con énfasis en el diseño de soluciones centradas en el usuario y la planificación de interfaces funcionales.",],
+      en: ["The platform supports two types of users:",
+            "Foster home / adopter, who can publish pets for adoption and submit adoption requests.",
+            "Shelter, which can publish pets and manage incoming adoption requests.",
+            "This project was developed as part of the Systems Analysis and Design course, with a strong focus on user-centered design and interface planning."
+      ]
+    },
+    rol: {
+        es: ["Me encargué del diseño y prototipado de:",
+            "El feed principal de la plataforma.",
+            "La vista de detalle de la mascota.",
+            "Formularios para nuevas publicaciones, solicitudes de adopción y envío de mensajes.",
+            "Vistas de perfil para los usuarios casa cuna/adoptante y refugio.",
+            "La visualización de las solicitudes de adopción según el tipo de usuario.",
+        ],
+        en: ["I was responsible for designing and prototyping:",
+              "The platform’s main feed.",
+              "The pet detail view.",
+              "Forms for new pet listings, adoption requests, and messaging.",
+              "User profile views for both foster home/adopter and shelter users.",
+              "The visualization of adoption requests for each user type.",
+        ]
+    },
+    aprendizaje: {
+      es: ["Aprendí el uso básico de Figma, incluyendo la creación y reutilización de componentes.",
+            "Fortalecí mis habilidades en diseño de interfaces de usuario (UI).",
+            "Desarrollé habilidades de coordinación y trabajo en equipo, colaborando con un grupo de cuatro personas.",
+        ],
+      en: ["Learned the fundamentals of Figma, including creating and reusing components.",
+            "Strengthened my user interface (UI) design skills.",
+            "Improved my project coordination and teamwork abilities while working in a team of four people."
+      ]
+    },
+    figma: "https://www.figma.com/design/tu377KNSE2eVMotupALl48/Prototipo-del-Frontend?node-id=0-1&t=3ffSpCa6uXlI5kEG-1"
   }
 ];
