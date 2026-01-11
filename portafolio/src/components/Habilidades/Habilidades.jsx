@@ -24,6 +24,7 @@ import figmaLogo from "../../assets/Iconos/Herramientas/figma-icon.svg"
 import gitLogo from "../../assets/Iconos/Herramientas/git-scm-icon.svg"
 import githubLogo from "../../assets/Iconos/Herramientas/Octicons-mark-github.svg"
 import tableauLogo from "../../assets/Iconos/Herramientas/tableau-software.svg"
+import vercelLogo from "../../assets/Iconos/Herramientas/vercel-icon-svgrepo-com.svg"
 
 export default function Habilidades({ language }) {
 
@@ -99,6 +100,7 @@ export default function Habilidades({ language }) {
             <IconoHabilidad src={githubLogo} alt="GitHub" label="GitHub" />
             <IconoHabilidad src={figmaLogo} alt="Figma" label="Figma" />
             <IconoHabilidad src={tableauLogo} alt="Tableau" label="Tableau" />
+            <IconoHabilidad src={vercelLogo} alt="Vercel" label="Vercel"/>
         </TarjetaHabilidades>
       </div>
     </div>
