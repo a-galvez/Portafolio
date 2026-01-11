@@ -4,7 +4,7 @@ import { LanguageContext } from "../../context/LanguageContext";
 import { proyectos } from "../../data/proyectos";
 import MediaCarousel from "./Carrusel";
 import Navbar from "../Navbar";
-import githubLogo from "../../assets/Iconos/Herramientas/git-scm-icon.svg"
+import githubLogo from "../../assets/Iconos/Herramientas/Octicons-mark-github.svg"
 import figmaLogo from "../../assets/Iconos/Herramientas/figma-icon.svg"
 
 export default function ProyectoDetalle() {
