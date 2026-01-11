@@ -67,8 +67,8 @@ export const proyectos = [
       }
     },
     detalle: {
-      es: "Este proyecto fue desarrollado como parte de la asignatura Programación Orientada a Objetos, aplicando conceptos fundamentales como modelado de clases, relaciones entre entidades y estructuración del código.",
-      en: "This project was developed as part of the Object-Oriented Programming course, applying fundamental concepts such as class modeling, entity relationships, and code structuring."
+      es: ["Este proyecto fue desarrollado como parte de la asignatura Programación Orientada a Objetos, aplicando conceptos fundamentales como modelado de clases, relaciones entre entidades y estructuración del código."],
+      en: ["This project was developed as part of the Object-Oriented Programming course, applying fundamental concepts such as class modeling, entity relationships, and code structuring."]
     },
     rol: {
         es: [ "Diseño e implementación de la base de datos.",
@@ -120,8 +120,8 @@ export const proyectos = [
       }
     },
     detalle: {
-      es: "Este proyecto fue desarrollado como parte de la asignatura Lenguajes de Programación, poniendo en práctica conceptos avanzados de backend, arquitectura MVC, consumo de APIs internas y diseño de interfaces. ",
-      en: "This project was developed as part of the Programming Languages course, applying advanced backend concepts, MVC architecture, internal API consumption, and interface design."
+      es: ["Este proyecto fue desarrollado como parte de la asignatura Lenguajes de Programación, poniendo en práctica conceptos avanzados de backend, arquitectura MVC, consumo de APIs internas y diseño de interfaces. "],
+      en: ["This project was developed as part of the Programming Languages course, applying advanced backend concepts, MVC architecture, internal API consumption, and interface design."]
     },
     rol: {
         es: [ "Diseño e implementación de la base de datos.",
@@ -179,8 +179,8 @@ export const proyectos = [
       }
     },
     detalle: {
-      es: "Este proyecto fue desarrollado como parte de la asignatura Bases de Datos I, aplicando conceptos de modelado, consultas eficientes y relaciones entre entidades.",
-      en: "This project was developed as part of the Databases I course, applying concepts of modeling, efficient queries, and entity relationships."
+      es: ["Este proyecto fue desarrollado como parte de la asignatura Bases de Datos I, aplicando conceptos de modelado, consultas eficientes y relaciones entre entidades."],
+      en: ["This project was developed as part of the Databases I course, applying concepts of modeling, efficient queries, and entity relationships."]
     },
     rol: {
         es: [ "Diseño e implementación de la base de datos.",
@@ -237,8 +237,8 @@ export const proyectos = [
       }
     },
     detalle: {
-      es: "Proyecto desarrollado como parte de la asignatura Bases de Datos II, aplicando conceptos de arquitectura de datos, modelado multidimensional y procesos ETL.",
-      en: "Developed as part of the Databases II course, applying concepts of data architecture, multidimensional modeling, and ETL processes."
+      es: ["Proyecto desarrollado como parte de la asignatura Bases de Datos II, aplicando conceptos de arquitectura de datos, modelado multidimensional y procesos ETL."],
+      en: ["Developed as part of the Databases II course, applying concepts of data architecture, multidimensional modeling, and ETL processes."]
     },
     rol: {
         es: ["Investigación sobre el uso de Python para procesos ETL.",
@@ -298,8 +298,8 @@ export const proyectos = [
         database: ["JSON file"]
       }
     },detalle: {
-      es: "Proyecto desarrollado para la semana de la carrera de Ingeniería en Sistemas 2025",
-      en: "Developed for a game show as part of the activities done for the Software Engineering undergraduate celebration week of 2025"
+      es: ["Proyecto desarrollado para la semana de la carrera de Ingeniería en Sistemas 2025"],
+      en: ["Developed for a game show as part of the activities done for the Software Engineering undergraduate celebration week of 2025"]
     },
     rol: {
       es: ["Desarrollo completo del frontend de la aplicación.",
@@ -348,8 +348,8 @@ export const proyectos = [
       }
     },
     detalle: {
-      es: "Proyecto desarrollado como parte de la asignatura Inteligencia Artificial, aplicando conceptos fundamentales de redes neuronales convolucionales. Se implementaron desde cero las distintas capas de la CNN, incluyendo convolución, pooling y clasificación, utilizando Python sin el uso de librerías especializadas de deep learning. El modelo fue entrenado para clasificar cinco tipos de flores a partir de un conjunto de imágenes, permitiendo comprender en profundidad el funcionamiento interno de este tipo de redes.",
-      en: "Project developed as part of the Artificial Intelligence course, applying fundamental concepts of convolutional neural networks. The different CNN layers were implemented from scratch, including convolution, pooling, and classification, using Python without specialized deep learning libraries. The model was trained to classify five types of flowers from an image dataset, allowing a deeper understanding of how this type of neural network works internally."
+      es: ["Proyecto desarrollado como parte de la asignatura Inteligencia Artificial, aplicando conceptos fundamentales de redes neuronales convolucionales. Se implementaron desde cero las distintas capas de la CNN, incluyendo convolución, pooling y clasificación, utilizando Python sin el uso de librerías especializadas de deep learning. El modelo fue entrenado para clasificar cinco tipos de flores a partir de un conjunto de imágenes, permitiendo comprender en profundidad el funcionamiento interno de este tipo de redes."],
+      en: ["Project developed as part of the Artificial Intelligence course, applying fundamental concepts of convolutional neural networks. The different CNN layers were implemented from scratch, including convolution, pooling, and classification, using Python without specialized deep learning libraries. The model was trained to classify five types of flowers from an image dataset, allowing a deeper understanding of how this type of neural network works internally."]
     },
     rol: {
         es: ["Al ser un proyecto individual, me encargué de:",

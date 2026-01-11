@@ -88,9 +88,16 @@ export default function ProyectoDetalle() {
         </section>
 
         {/* Detalle */}
-        <p className="text-gray-700 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg mt-6">
-            {proyecto.detalle[language]}
-        </p>
+        <div className="mt-4 sm:mt-6">
+        {proyecto.detalle[language].map((parrafo, index) => (
+            <p
+            key={index}
+            className="text-gray-700 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg mt-6"
+            >
+            {parrafo}
+            </p>
+        ))}
+        </div>
 
         {/* Rol */}
         <section className="mb-6 sm:mb-8">
