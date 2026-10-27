@@ -1,12 +1,13 @@
 import TarjetaHabilidades from './TarjetaHabilidades'
 import IconoHabilidad from './IconoHabilidad';
-import cppLogo from "../../assets/Iconos/Lenguajes/ISO_C++_Logo.svg";
 import javaLogo from "../../assets/Iconos/Lenguajes/java-icon.svg";
+import tsLogo from "../../assets/Iconos/Lenguajes/TypeScript.svg";
 import csharpLogo from "../../assets/Iconos/Lenguajes/Logo_C_sharp.svg";
 import phpLogo from "../../assets/Iconos/Lenguajes/PHP-logo.svg";
 import pythonLogo from "../../assets/Iconos/Lenguajes/Python-logo-notext.svg";
 import jsLogo from "../../assets/Iconos/Lenguajes/Unofficial_JavaScript_logo_2.svg";
 import blazorLogo from "../../assets/Iconos/Frameworks/blazor.svg"
+import nodeLogo from "../../assets/Iconos/Frameworks/Node.js.svg";
 import laravelLogo from "../../assets/Iconos/Frameworks/Laravel.svg"
 import netLogo from "../../assets/Iconos/Frameworks/NET_Core_Logo.svg"
 import reactLogo from "../../assets/Iconos/Frameworks/React-icon.svg"
@@ -20,6 +21,10 @@ import muiLogo from "../../assets/Iconos/Frontend/mui-icon.svg"
 import tailwindLogo from "../../assets/Iconos/Frontend/tailwindcss-icon.svg"
 import cssLogo from "../../assets/Iconos/Frontend/w3_css-icon~old.svg"
 import htmlLogo from "../../assets/Iconos/Frontend/w3_html5-icon.svg"
+import ec2Logo from "../../assets/Iconos/Cloud/EC2.svg";
+import s3Logo from "../../assets/Iconos/Cloud/Simple Storage Service.svg";
+import lambdaLogo from "../../assets/Iconos/Cloud/Lambda.svg";
+import dropletLogo from "../../assets/Iconos/Cloud/digitalocean.svg";
 import figmaLogo from "../../assets/Iconos/Herramientas/figma-icon.svg"
 import gitLogo from "../../assets/Iconos/Herramientas/git-scm-icon.svg"
 import githubLogo from "../../assets/Iconos/Herramientas/Octicons-mark-github.svg"
@@ -38,6 +43,7 @@ export default function Habilidades({ language }) {
         frameworks: "Frameworks y Librerías",
         bases: "Bases de Datos",
         frontend: "Frontend / Desarrollo Web",
+        cloud: "Cloud y DevOps",
         herramientas: "Herramientas y Otros",
       },
     },
@@ -50,6 +56,7 @@ export default function Habilidades({ language }) {
         frameworks: "Frameworks and Libraries",
         bases: "Databases",
         frontend: "Frontend / Web Development",
+        cloud: "Cloud and DevOps",
         herramientas: "Tools and Others",
       },
     },
@@ -65,15 +72,16 @@ export default function Habilidades({ language }) {
         
         <TarjetaHabilidades title={texts[language].tarjetas.lenguajes}>
             <IconoHabilidad src={javaLogo} alt="Java" label="Java" />
+            <IconoHabilidad src={tsLogo} alt="Typescript" label="Typescript" />
             <IconoHabilidad src={csharpLogo} alt="C#" label="C#" />
             <IconoHabilidad src={phpLogo} alt="PHP" label="PHP" />
             <IconoHabilidad src={jsLogo} alt="JavaScript" label="JavaScript" />
-            <IconoHabilidad src={cppLogo} alt="C++" label="C++" />
             <IconoHabilidad src={pythonLogo} alt="Python" label="Python" />
         </TarjetaHabilidades>
 
         <TarjetaHabilidades title={texts[language].tarjetas.frameworks}>
             <IconoHabilidad src={springLogo} alt="Spring Boot" label="Spring Boot" />
+            <IconoHabilidad src={nodeLogo} alt="Node.js" label="Node.js" />
             <IconoHabilidad src={netLogo} alt="ASP .NET" label="ASP .NET Core" />
             <IconoHabilidad src={blazorLogo} alt="Blazor" label="Blazor" />
             <IconoHabilidad src={laravelLogo} alt="Laravel" label="Laravel" />
@@ -95,7 +103,14 @@ export default function Habilidades({ language }) {
             <IconoHabilidad src={bootstrapLogo} alt="Bootstrap" label="Bootstrap" />
         </TarjetaHabilidades>
 
-        <TarjetaHabilidades title={texts[language].tarjetas.herramientas} className="justify-self-center w-full md:col-span-2">
+        <TarjetaHabilidades title={texts[language].tarjetas.cloud}>
+            <IconoHabilidad src={ec2Logo} alt="AWS EC2" label="AWS EC2" />
+            <IconoHabilidad src={s3Logo} alt="AWS S3" label="AWS S3" />
+            <IconoHabilidad src={lambdaLogo} alt="AWS Serverless" label="AWS Serverless" />
+            <IconoHabilidad src={dropletLogo} alt="DigitalOcean Droplets" label="DigitalOcean Droplets" />
+        </TarjetaHabilidades>
+
+        <TarjetaHabilidades title={texts[language].tarjetas.herramientas}>
             <IconoHabilidad src={gitLogo} alt="Git" label="Git" />
             <IconoHabilidad src={githubLogo} alt="GitHub" label="GitHub" />
             <IconoHabilidad src={figmaLogo} alt="Figma" label="Figma" />

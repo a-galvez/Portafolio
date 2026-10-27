@@ -6,19 +6,20 @@ export default function Hero({ language }) {
   const texts = {
     es: {
       saludo: "Hola, mi nombre es",
-      descripcion:
-        ["Soy estudiante de la carrera de Ingeniería en Sistemas en la Universidad Nacional Autónoma de Honduras, con una sólida formación técnica en desarrollo de software, bases de datos y tecnologías web. Me apasiona la programación porque me permite crear soluciones a problemas reales de forma creativa e innovadora, utilizando la tecnología como una herramienta práctica y significativa.", 
-        "Actualmente, estoy interesada en aprender Node.js, profundizar en la aplicación práctica de patrones de diseño y adquirir conocimientos en Blender para fortalecer mis habilidades de diseño y ampliar mis recursos creativos. Asimismo, busco comprender y aplicar WebSockets para mejorar proyectos en los que ya he trabajado. Me motiva constantemente encontrar nuevas formas de innovar, optimizar procesos y mejorar mis espacios de trabajo mediante soluciones escalables y bien estructuradas."
-        ]
+      descripcion: [
+        "Soy pasante de la carrera de Ingeniería en Sistemas en la Universidad Nacional Autónoma de Honduras (UNAH), con experiencia en desarrollo backend, bases de datos y despliegue de aplicaciones. Me interesa el desarrollo web como una forma de construir soluciones tecnológicas funcionales, eficientes y orientadas a resolver problemas reales.",
+        "Me apasiona el análisis de datos, la creación de aplicaciones web y el aprendizaje sobre modelos de inteligencia artificial y sus aplicaciones. Disfruto explorar nuevas tecnologías, analizar problemas y diseñar soluciones bien estructuradas que combinen lógica, creatividad e innovación. Mi objetivo es continuar creciendo profesionalmente y ampliar mis conocimientos en áreas que me permitan desarrollar soluciones tecnológicas cada vez más completas."
+      ]
     },
     en: {
       saludo: "Hi, my name is",
-      descripcion:
-        ["I am a Software Engineering student at Universidad Nacional Autónoma de Honduras (UNAH), with a solid technical background in software development, databases, and web technologies. I am passionate about programming because it allows me to create creative and innovative solutions to real-world problems, using technology as a practical and meaningful tool.",
-          "Currently, I am interested in learning Node.js, deepening my practical knowledge of design patterns, and acquiring skills in Blender to strengthen my design abilities and expand my creative toolkit. I also aim to understand and apply WebSockets to enhance projects I have previously worked on. I am constantly motivated to find new ways to innovate, optimize processes, and improve work environments through scalable and well-structured solutions."
-        ]
+      descripcion: [
+        "I am a Software Engineering student at Universidad Nacional Autónoma de Honduras (UNAH), currently completing the internship stage of my degree. I have experience in backend development, databases, and application deployment. I am interested in web development as a way to build functional, efficient, and problem-oriented technological solutions.",
+        "I am passionate about data analysis, web application development, and learning about artificial intelligence models and their applications. I enjoy exploring new technologies, analyzing problems, and designing well-structured solutions that combine logic, creativity, and innovation. My goal is to continue growing professionally and expanding my knowledge in areas that will enable me to develop increasingly comprehensive technological solutions."
+      ]
     }
-  }
+  };
+
 
   return (
     <section className="flex flex-col md:flex-row items-center gap-8 py-12">
